@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Services | SMK Kuhara Library</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="image/logo-kuhara.png" alt="Logo SMK Kuhara Tawau" height="50">
+                <div class="logo-text">
+                    <h1>SMK KUHARA LIBRARY</h1>
+                    <p>Information Access Portal</p>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="services.html#borrow">Borrow & Renew</a>
+                            <a href="services.html#catalog">Online Catalog</a>
+                            <a href="services.html#faqs">FAQs</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="resources.html" class="active">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="resources.html#dictionaries">Dictionaries</a>
+                            <a href="resources.html#citation">Citation Tools</a>
+                            <a href="resources.html#websites">Educational Websites</a>
+                            <a href="resources.html#ebooks">E-Books</a>
+                        </div>
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="section">
+            <br>
+            <h1 class="page-title">Library Services</h1>
+            <p class="page-subtitle">Explore the range of services we offer to support your learning journey</p>
+            
+            <!-- Borrowing Services -->
+            <div class="service-feature" id="borrow">
+                <div class="service-icon-large">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h2>Book Borrowing & Renewal</h2>
+                <p>Our library offers an extensive collection of books available for loan to all registered students and staff. Learn how to borrow and renew items below.</p>
+                
+                <h3>Borrowing Process</h3>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Find Your Book</h4>
+                        <p>Search our <a href="resources.html">online catalog</a> or browse the shelves</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Bring to Counter</h4>
+                        <p>Present the book with your student ID at the circulation desk</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Check Out</h4>
+                        <p>Our staff will process your loan and inform you of the due date</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>Enjoy Reading</h4>
+                        <p>Return or renew before the due date to avoid fines</p>
+                    </div>
+                </div>
+                
+                <div class="loan-table-container">
+    <h3>Loan Periods & Limits</h3>
+    <table class="loan-table">
+        <thead>
+            <tr>
+                <th>User Type</th>
+                <th>Loan Limit</th>
+                <th>Loan Period</th>
+                <th>Renewals</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Students</td>
+                <td>5 items</td>
+                <td>2 weeks</td>
+                <td>2 times</td>
+            </tr>
+            <tr>
+                <td>Teachers</td>
+                <td>10 items</td>
+                <td>4 weeks</td>
+                <td>3 times</td>
+            </tr>
+            <tr>
+                <td>Staff</td>
+                <td>3 items</td>
+                <td>3 weeks</td>
+                <td>1 time</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="renewal-cta">
+        <a href="#online-renewal" class="btn btn-outline">Renew Books Online</a>
+    </div>
+</div>
+            
+            <!-- Online Catalog -->
+            <div class="service-feature" id="catalog">
+                <div class="service-icon-large">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h2>Online Catalog</h2>
+                <p>Search our entire collection from anywhere using our online catalog system.</p>
+                
+                <div class="catalog-search">
+                    <form class="search-form">
+                        <input type="text" placeholder="Search by title, author, or keyword">
+                        <button type="submit" class="btn"><i class="fas fa-search"></i> Search</button>
+                    </form>
+                </div>
+                
+                <h3>Search Tips</h3>
+                <ul class="search-tips">
+                    <li>Use quotation marks for exact phrases: "Malaysian history"</li>
+                    <li>Use AND/OR for combining terms: science AND experiments</li>
+                    <li>Filter by material type (book, ebook, audiobook)</li>
+                    <li>Sort by relevance, date, or title</li>
+                </ul>
+                
+                <div class="service-cta">
+                    <a href="resources.html" class="btn btn-outline">Advanced Search Options</a>
+                </div>
+            </div>
+            
+            <!-- Online Renewal -->
+            <div class="service-feature" id="online-renewal">
+                <div class="service-icon-large">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h2>Online Renewal</h2>
+                <p>Renew your borrowed items online without visiting the library.</p>
+                
+                <div class="renewal-process">
+                    <h3>How to Renew Online</h3>
+                    <ol>
+                        <li>Visit the <a href="#catalog">Online Catalog</a> and click "My Account"</li>
+                        <li>Login with your student ID and password (default: IC number)</li>
+                        <li>Select the items you wish to renew</li>
+                        <li>Click "Renew Selected Items"</li>
+                        <li>Note your new due dates</li>
+                    </ol>
+                    
+                    <div class="notice-box">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Items cannot be renewed if: they are overdue, another user has placed a hold, or you've reached your renewal limit.</p>
+                    </div>
+                </div>
+                
+                <div class="service-cta">
+                    <a href="#catalog" class="btn">Login to Renew Now</a>
+                </div>
+            </div>
+            
+            <!-- FAQs Section -->
+            <div class="service-feature" id="faqs">
+                <div class="service-icon-large">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How do I get a library account?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All registered students automatically have a library account. Your login is your student ID number, and the default password is your IC number (without hyphens). Teachers and staff should see the librarian to set up their accounts.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What are the library opening hours?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The library is open Monday to Friday from 8:00 AM to 4:30 PM. We are closed on weekends and public holidays. During school holidays, we operate on reduced hours - please check our <a href="news.html">News page</a> for updates.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What happens if I return a book late?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Late returns incur fines of RM0.20 per day per item for students, and RM0.50 per day per item for teachers/staff. If an item is more than 30 days overdue, your borrowing privileges will be suspended until the item is returned or replaced.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I reserve a book that's checked out?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can place a hold on checked out items through the <a href="#catalog">Online Catalog</a>. You'll be notified when the item is available, and it will be held for you at the circulation desk for 3 days.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Does the library have e-books?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We have a growing collection of e-books available through our <a href="resources.html">Digital Resources</a> page. You can access them anytime with your library account.</p>
+                    </div>
+                </div>
+                
+                <div class="service-cta">
+                    <p>Still have questions? <a href="feedback.html">Contact us</a> for more information.</p>
+                    <a href="pdf/Library_Rules.pdf" class="btn btn-pdf" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-file-pdf"></i> View Library Rules (PDF) <small><i class="fas fa-external-link-alt"></i></small>
+    </a>
+</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>SMK Kuhara Library</h3>
+                    <p>Jalan Kuhara, 91000 Tawau, Sabah</p>
+                    <p>Opening Hours: Mon-Fri 8:00 AM - 4:30 PM</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:library@smkkuhara.edu.my"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p>Email: library@smkkuhara.edu.my</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SMK Kuhara Library. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle Function
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            answer.classList.toggle('show');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
+        
+        // Highlight current section in navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.location.hash) {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                }
+            }
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

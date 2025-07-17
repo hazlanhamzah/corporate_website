@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | SMK Kuhara Library</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation (Keep your existing header) -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="image/logo-kuhara.png" alt="Logo SMK Kuhara Tawau" height="50">
+                <div class="logo-text">
+                    <h1>SMK KUHARA LIBRARY</h1>
+                    <p>Information Access Portal</p>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="services.html#borrow">Borrow & Renew</a>
+                            <a href="services.html#catalog">Online Catalog</a>
+                            <a href="services.html#faqs">FAQs</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="resources.html">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="resources.html#dictionaries">Dictionaries</a>
+                            <a href="resources.html#citation">Citation Tools</a>
+                            <a href="resources.html#websites">Educational Websites</a>
+                        </div>
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="feedback.html" class="active">Feedback</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container"><br>
+        <section class="section">
+            <h1 class="page-title">Your Feedback Matters</h1>
+            <p class="page-subtitle">Help us improve our library services</p>
+            
+            <div class="hubungi-content">
+                <!-- Feedback Form -->
+                <div class="hubungi-form" style="flex: 2;">
+                    <h2><i class="fas fa-comment-dots"></i> Send Us Your Feedback</h2>
+                    <form 
+    id="feedbackForm" 
+    action="mailto:hazlanhamzah4@gmail.com" 
+    method="POST"
+    enctype="text/plain"
+>
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="role">You are a:</label>
+        <select id="role" name="role" required>
+            <option value="">Select your role</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="staff">Staff</option>
+            <option value="parent">Parent</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="feedback-type">Feedback Type</label>
+        <select id="feedback-type" name="feedback-type" required>
+            <option value="">Select feedback type</option>
+            <option value="suggestion">Suggestion</option>
+            <option value="compliment">Compliment</option>
+            <option value="complaint">Complaint</option>
+            <option value="question">Question</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="message">Your Feedback</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    
+    <div class="form-group">
+        <label for="rating">Service Rating (1-5 stars)</label>
+        <div class="rating-stars">
+            <i class="far fa-star" data-rating="1"></i>
+            <i class="far fa-star" data-rating="2"></i>
+            <i class="far fa-star" data-rating="3"></i>
+            <i class="far fa-star" data-rating="4"></i>
+            <i class="far fa-star" data-rating="5"></i>
+            <input type="hidden" id="rating" name="rating" value="0">
+        </div>
+    </div>
+    
+    <a href="https://forms.gle/gMTqYmf8Lo3mEf3k7" target="_blank" class="btn btn-small">Feedback Form</a>
+</form>
+                </div>
+                
+                <!-- Testimonials (Keep your existing testimonials) -->
+                <div class="hubungi-info" style="flex: 1;">
+                    <h2><i class="fas fa-quote-left"></i> What Others Say</h2>
+                    <div class="testimonial-card">
+                        <div class="info-item">
+                            <i class="fas fa-user-graduate"></i>
+                            <div>
+                                <p>"The new online catalog system has made finding books so much easier!"</p>
+                                <strong>Ahmad, Form 5</strong>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="info-item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <div>
+                                <p>"The digital resources section is extremely helpful for my lesson planning."</p>
+                                <strong>Puan Siti, Teacher</strong>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <p>"Quick response to my book reservation request. Excellent service!"</p>
+                                <strong>Mei Ling, Form 4</strong>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div class="service-feature" style="margin-top: 40px;">
+                <h2><i class="fas fa-question-circle"></i> Feedback FAQs</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does it take to get a response to my feedback?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We typically respond within 3-5 working days. For urgent matters, please visit the library counter.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I submit feedback anonymously?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can leave out your personal details, but this means we won't be able to respond directly to your feedback.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What happens after I submit feedback?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All feedback is reviewed by our library team. We may contact you for more details and will consider all suggestions for improvements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>SMK Kuhara Library</h3>
+                    <p>Jalan Kuhara, 91000 Tawau, Sabah</p>
+                    <p>Opening Hours: Mon-Fri 8:00 AM - 4:30 PM</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:library@smkkuhara.edu.my"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p>Email: library@smkkuhara.edu.my</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SMK Kuhara Library. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Star Rating System
+        const stars = document.querySelectorAll('.rating-stars .fa-star');
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                const rating = this.getAttribute('data-rating');
+                document.getElementById('rating').value = rating;
+                
+                stars.forEach((s, index) => {
+                    if (index < rating) {
+                        s.classList.remove('far');
+                        s.classList.add('fas');
+                    } else {
+                        s.classList.remove('fas');
+                        s.classList.add('far');
+                    }
+                });
+            });
+        });
+
+        // FAQ Toggle Function
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            answer.classList.toggle('show');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
+
+        // FormSubmit Configuration
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const role = document.getElementById('role').value;
+    const feedbackType = document.getElementById('feedback-type').value;
+    const message = document.getElementById('message').value;
+    const rating = document.getElementById('rating').value;
+
+    // Format the email body
+    const subject = `Library Feedback: ${feedbackType}`;
+    const body = `
+        Name: ${name}
+        Email: ${email}
+        Role: ${role}
+        Feedback Type: ${feedbackType}
+        Rating: ${rating}/5
+        Message: ${message}
+    `;
+
+    // Encode for mailto link
+    const mailtoLink = `mailto:hazlanhamzah4@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open user's email client
+    window.location.href = mailtoLink;
+    
+    // Optional: Show confirmation
+    alert("Your feedback is ready to send. Please check your email client.");
+    
+    // Reset form
+    this.reset();
+    stars.forEach(star => {
+        star.classList.remove('fas');
+        star.classList.add('far');
+    });
+    document.getElementById('rating').value = '0';
+});
+    </script>
+</body>
+</html>

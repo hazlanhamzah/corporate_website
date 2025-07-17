@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Resources | SMK Kuhara Library</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Dropdown Navigation -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="image/logo-kuhara.png" alt="Logo SMK Kuhara Tawau" height="50">
+                <div class="logo-text">
+                    <h1>SMK KUHARA LIBRARY</h1>
+                    <p>Information Access Portal</p>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="services.html#borrow">Borrow & Renew</a>
+                            <a href="services.html#catalog">Online Catalog</a>
+                            <a href="services.html#faqs">FAQs</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="resources.html" class="active">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="resources.html#dictionaries">Dictionaries</a>
+                            <a href="resources.html#citation">Citation Tools</a>
+                            <a href="resources.html#websites">Educational Websites</a>
+                            <a href="resources.html#ebooks">E-Books</a>
+                        </div>
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container"><br>
+        <section class="section">
+            <h1 class="page-title">Educational Resources</h1>
+            <p class="page-subtitle">Explore our digital tools to support your learning</p>
+            
+            <!-- Dictionary Resources with Flip Cards -->
+            <div class="resource-section" id="dictionaries">
+                <h2><i class="fas fa-book"></i> Online Dictionaries</h2>
+                <div class="resource-grid">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="resource-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <h3>Oxford English Dictionary</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>The most comprehensive English language dictionary with pronunciation guides and word origins.</p>
+                                <a href="https://www.oed.com" target="_blank" class="btn btn-small">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="resource-icon">
+                                    <i class="fas fa-language"></i>
+                                </div>
+                                <h3>Malay-English Dictionary</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Comprehensive Malay to English dictionary with example sentences and phrases.</p>
+                                <a href="https://www.kamus.com" target="_blank" class="btn btn-small">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="resource-icon">
+                                    <i class="fas fa-atom"></i>
+                                </div>
+                                <h3>Science Glossary</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Technical terms and definitions for physics, chemistry, and biology.</p>
+                                <a href="https://www.scienceglossary.org" target="_blank" class="btn btn-small">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Citation Tools Section -->
+            <div class="resource-section" id="citation">
+                <h2><i class="fas fa-quote-right"></i> Citation Tools</h2>
+                <div class="resource-grid">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="resource-icon">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                                <h3>ZoteroBib</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Simple, free tool to generate citations in MLA, APA, and Chicago styles.</p>
+                                <a href="https://zbib.org" target="_blank" class="btn btn-small">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="resource-icon">
+                                    <i class="fas fa-clipboard-list"></i>
+                                </div>
+                                <h3>Cite This For Me</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Automatic citation generator with browser extension for easy referencing.</p>
+                                <a href="https://www.citethisforme.com" target="_blank" class="btn btn-small">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Educational Websites Section -->
+            <div class="resource-section" id="websites">
+                <h2><i class="fas fa-laptop"></i> Educational Websites</h2>
+                <div class="resource-grid">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="resource-icon">
+                                    <i class="fas fa-square-root-alt"></i>
+                                </div>
+                                <h3>Khan Academy</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Free online courses, lessons and practice across all subjects.</p>
+                                <a href="https://www.khanacademy.org" target="_blank" class="btn btn-small">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="resource-icon">
+                                    <i class="fas fa-flask"></i>
+                                </div>
+                                <h3>PhET Simulations</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Interactive math and science simulations for better understanding.</p>
+                                <a href="https://phet.colorado.edu" target="_blank" class="btn btn-small">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- E-Books Section -->
+            <div class="resource-section" id="ebooks">
+                <h2><i class="fas fa-tablet-alt"></i> E-Books</h2>
+                <div class="resource-grid">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="resource-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <h3>Project Gutenberg</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Over 60,000 free e-books, especially classic literature.</p>
+                                <a href="https://www.gutenberg.org" target="_blank" class="btn btn-small">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="resource-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <h3>Open Library</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Free library of over 1.7 million e-books available for borrowing.</p>
+                                <a href="https://openlibrary.org" target="_blank" class="btn btn-small">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>SMK Kuhara Library</h3>
+                    <p>Jalan Kuhara, 91000 Tawau, Sabah</p>
+                    <p>Opening Hours: Mon-Fri 8:00 AM - 4:30 PM</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:library@smkkuhara.edu.my"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p>Email: library@smkkuhara.edu.my</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SMK Kuhara Library. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
