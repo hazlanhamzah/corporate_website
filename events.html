@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | SMK Kuhara Library</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="image/logo-kuhara.png" alt="Logo SMK Kuhara Tawau" height="50">
+                <div class="logo-text">
+                    <h1>SMK KUHARA LIBRARY</h1>
+                    <p>Information Access Portal</p>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="services.html#borrow">Borrow & Renew</a>
+                            <a href="services.html#catalog">Online Catalog</a>
+                            <a href="services.html#faqs">FAQs</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="resources.html">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="resources.html#dictionaries">Dictionaries</a>
+                            <a href="resources.html#citation">Citation Tools</a>
+                            <a href="resources.html#websites">Educational Websites</a>
+                        </div>
+                    </li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="section"><br>
+            <h1 class="page-title">Upcoming Events</h1>
+            <p class="page-subtitle">Join our exciting library programs and activities</p>
+            
+            <!-- Featured Event Slider -->
+            <div class="news-slider">
+                <div class="slider-container" id="sliderContainer">
+                    <div class="slide">
+                        <img src="image/reading-event.jpg" alt="Reading Challenge">
+                        <div class="slide-content">
+                            <h3>Annual Reading Challenge</h3>
+                            <p>Join our year-long reading challenge with exciting prizes for top readers!</p>
+                            <a href="#reading-challenge" class="btn btn-small">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="image/workshop-event.jpg" alt="Digital Workshop">
+                        <div class="slide-content">
+                            <h3>Digital Literacy Workshop</h3>
+                            <p>Learn essential online research skills and digital tools for academic success.</p>
+                            <a href="#digital-workshop" class="btn btn-small">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-nav">
+                    <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+
+            <!-- Events Grid -->
+            <div class="program-grid">
+                <!-- Reading Challenge -->
+                <div class="program-card" id="reading-challenge">
+                    <div class="program-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>Annual Reading Challenge</h3>
+                    <p class="event-date">January 15 - December 15, 2024</p>
+                    <p>Read books from different categories to earn points and win prizes!</p>
+                    <div class="event-details">
+                        <p><strong>Categories:</strong> Fiction, Non-Fiction, STEM, Malaysian Authors</p>
+                        <p><strong>Prizes:</strong> Book vouchers, trophies, special privileges</p>
+                    </div>
+                    <a href="#" class="btn">Join Challenge</a>
+                </div>
+
+                <!-- Digital Workshop -->
+                <div class="program-card" id="digital-workshop">
+                    <div class="program-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Digital Literacy Workshop</h3>
+                    <p class="event-date">February 20, 2024 | 2:00 PM - 4:00 PM</p>
+                    <p>Learn how to conduct effective online research and use digital tools.</p>
+                    <div class="event-details">
+                        <p><strong>Topics:</strong> Search techniques, evaluating sources, citation tools</p>
+                        <p><strong>Location:</strong> Library Computer Lab</p>
+                    </div>
+                    <a href="#" class="btn">Register Now</a>
+                </div>
+
+                <!-- Author Visit -->
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Meet the Author: Ahmad Fuadi</h3>
+                    <p class="event-date">March 5, 2024 | 10:00 AM - 12:00 PM</p>
+                    <p>The famous author of "Negeri 5 Menara" will share his writing journey.</p>
+                    <div class="event-details">
+                        <p><strong>Activities:</strong> Book reading, Q&A, book signing</p>
+                        <p><strong>Open to:</strong> All students and staff</p>
+                    </div>
+                    <a href="#" class="btn">Reserve Seat</a>
+                </div>
+
+                <!-- Book Club -->
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Monthly Book Club</h3>
+                    <p class="event-date">Every last Wednesday | 3:00 PM - 4:30 PM</p>
+                    <p>Join our book discussion group and share your reading experiences.</p>
+                    <div class="event-details">
+                        <p><strong>Next Book:</strong> "The Midnight Library" by Matt Haig</p>
+                        <p><strong>Facilitator:</strong> Puan Sarah, English Teacher</p>
+                    </div>
+                    <a href="#" class="btn">Join Club</a>
+                </div>
+            </div>
+
+            <!-- Past Events Gallery -->
+            <div class="section" style="padding-top: 0;">
+                <h2 class="section-title">Past Events</h2>
+                <div class="kemudahan-gallery">
+                    <div class="gallery-item">
+                        <img src="image/event1.jpg" alt="Book Week">
+                        <div class="gallery-caption">Book Week 2023</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="image/event2.jpg" alt="Storytelling">
+                        <div class="gallery-caption">Storytelling Competition</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="image/event3.jpg" alt="Poetry">
+                        <div class="gallery-caption">Poetry Reading Session</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="image/workshop-event.jpg" alt="Workshop">
+                        <div class="gallery-caption">Research Skills Workshop</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>SMK Kuhara Library</h3>
+                    <p>Jalan Kuhara, 91000 Tawau, Sabah</p>
+                    <p>Opening Hours: Mon-Fri 8:00 AM - 4:30 PM</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:library@smkkuhara.edu.my"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p>Email: library@smkkuhara.edu.my</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SMK Kuhara Library. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Slider Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.getElementById('sliderContainer');
+            const slides = document.querySelectorAll('.slide');
+            const dotsContainer = document.getElementById('sliderDots');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            let currentIndex = 0;
+            const slideCount = slides.length;
+            
+            // Create dots
+            slides.forEach((_, index) => {
+                const dot = document.createElement('span');
+                dot.classList.add('dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+            
+            // Update slider position
+            function updateSlider() {
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                
+                // Update dots
+                document.querySelectorAll('.dot').forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            // Go to specific slide
+            function goToSlide(index) {
+                currentIndex = index;
+                if (currentIndex >= slideCount) currentIndex = 0;
+                if (currentIndex < 0) currentIndex = slideCount - 1;
+                updateSlider();
+            }
+            
+            // Next slide
+            function nextSlide() {
+                goToSlide(currentIndex + 1);
+            }
+            
+            // Previous slide
+            function prevSlide() {
+                goToSlide(currentIndex - 1);
+            }
+            
+            // Event listeners
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+            
+            // Auto-advance slides every 5 seconds
+            setInterval(nextSlide, 5000);
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
